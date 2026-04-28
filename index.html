@@ -1,31 +1,39 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bar Si v0.03.4</title>
+    <title>Bar Si v0.06</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <div id="quiz-container">
     <h1>Bar Si</h1>
-    <div class="level-badge">Уровень 1: Составы</div>
     
-    <div id="quiz-ui">
+    <div id="start-screen" style="text-align: center; padding: 40px 0;">
+        <div class="level-badge">Готовий перевірити знання?</div>
+        <button id="start-game-btn" class="main-btn" onclick="startQuiz()">Почати гру</button>
+    </div>
+
+    <div id="quiz-ui" style="display: none;">
+        <div id="timer-container">
+            <div id="timer-bar"></div>
+        </div>
+
         <div id="question-text">
-            Какой состав у коктейля:
+            Який склад у коктейлю:
             <span id="target-cocktail" class="cocktail-name"></span>
         </div>
         <div id="options-container"></div>
-        <div id="score-info">Вопрос <span id="current-idx">1</span> из <span id="total-questions"></span></div>
+        <div id="score-info">Питання <span id="current-idx">1</span> з <span id="total-questions"></span></div>
     </div>
 
     <div id="final-screen" style="display:none; text-align: center;">
         <h2 id="final-msg"></h2>
-        <p id="final-score" style="font-size: 1.5em; margin: 10px 0;"></p>
-        <p id="final-comment" style="color: #ffcc00; font-style: italic; margin-bottom: 20px;"></p>
-        <button id="restart-btn" onclick="startQuiz()">Начать заново</button>
+        <p id="final-score"></p>
+        <p id="final-comment"></p>
+        <button class="main-btn" onclick="startQuiz()">Почати заново</button>
     </div>
 </div>
 

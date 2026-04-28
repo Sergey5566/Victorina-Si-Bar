@@ -1,68 +1,78 @@
 const cocktails = {
-    "Rosa frizzante gin tonic": "Gin infused rose pepper, Cordial grapefruit, Salt solution, Simple",
-    "Cherry velluto": "Lacto gin, Basic cordial, Monin cherry morello, Acid mix",
-    "Mela verde": "Vodka, Cordial apple, Cocktail drops cardamom",
-    "Dolce lychee negroni": "Lychee negroni punch, Лікер Giffard lychee",
-    "Maracuja intensa sour": "Tanduay Asian Rum Silver, Lime fresh, Lime cordial, Monin passionfruit puree, Basil leaves",
-    "Bella pesca": "Vodka Marblehead, Cordial peach, Cocktail drops palo santo, Acid mix",
-    "Sex and the city": "Vodka infused yuzu, Cordial cranberry, Simple syrup, Acid mix",
-    "Robin": "Вино белое Acantus, Джин рабочий flora, Raspberry-Hibiscus cordial, Simple, Alvera Aloe вода, Acid mix",
-    "Aluna": "Текіла Sombrero, Grapefruit cordial, Лікер Giffard Pineapple, Acid mix",
-    "Aperitivo Spritz Santero": "Spritz Aperitivo, Вино ігристе просекко",
-    "Americano": "Vermouth Rosso, Bitter, Содова",
-    "Adonis": "Vermouth Rosso, Херес Fino",
-    "Aztec Negroni": "Текіла Sambrero, Мескаль Guerrero Maya Espadin, Лікер Cynar, Bitter, Bitter Truth Chocolate Bitters",
-    "Aviation": "Джин Flora, Лікер Cartron Violette, Лікер maraschino, Lemon fresh",
-    "Amaretto Sour": "Бурбон Old Virginia, Лікер Disaronno Original, Lemon fresh, Simple, Egg white, Bitter Angostura",
-    "Boulevardier": "Vermouth Rosso, Bitter, Бурбон Old Virginia",
-    "Clover Club": "Gin Flora, Lemon fresh, Raspberry syrup, Egg white",
-    "Daiquiri": "Ром Tanduay Silver, Lime fresh, Simple",
-    "Dry Martini": "Джин Flora, Вермут Cinzano Extra Dry, Бітер Angostura Orange",
-    "Espresso Martini": "Горілка Marblehead, Лікер Cartron Cafe, Лікер Giffard white cacao, Espresso",
-    "French 75": "Джин Flora, Lemon fresh, Simple, Вино ігристе просекко",
-    "Fino Daiquiri": "Херес Fino, Lemon fresh, Simple",
-    "Gimlet": "Джин Flora, Lime cordial",
-    "Hanky Panky": "Джин Flora, Vermouth Rosso, Амаро Fernet Branca",
-    "Hugo": "Лікер Giffard Fleur de Sureau Sauvage, Вино ігристе Prosecco, Содова",
-    "Last word": "Джин Flora, Лікер Pages Verveine du Velay, Лікер Maraschino, Lime fresh",
-    "Margarita": "Текіла Sambrero, Лікер Cartron Triple sec, Lime fresh, Simple",
-    "Mezcal Margarita": "Мескаль Guerrero Maya Espadin, Текіла Sambrero, Лікер Cartron Triple sec, Lime fresh, Simple",
-    "Martinez": "Джин Flora, Vermouth Rosso, Лікер Maraschino, Бітер Angostura Orange",
-    "Manhattan": "Бурбон Old Virginia, Vermouth Rosso, Бітер Angostura, Бітер Angostura orange",
-    "M&M": "Мескаль Guerrero Maya Espadin, Амаро Montenegro",
-    "New york sour": "Бурбон Old Virginia, Lemon fresh, Simple, Egg white, Red wine",
-    "Negroni": "Vermouth Rosso, Bitter, Джин Flora",
-    "Negroni Sbagliato": "Vermouth Rosso, Bitter, Вино ігристе просекко",
-    "Old Fashioned": "Бурбон Old Virginia, Cane syrup, Бітер Angostura",
-    "Pedro Manhattan": "Бурбон Old Virginia, Херес Pedro Jimenez, Бітер Peychaud's",
-    "Prospector": "Бурбон Old Virginia, Амаро Averna, Херес Pedro Jimenez, Бітер Angostura",
-    "Penicillin": "Віскі Grant's Smoky, Віскі Laphroaig 10, Cocktail drops ginger, Ginger syrup, Lemon fresh",
-    "Pisco sour": "Піско, Lemon fresh, Lime fresh, Simple, Egg white",
-    "Tom collins": "Джин Flora, Lemon fresh, Simple, Содова",
-    "Sazerac": "Віскі Templeton Rye, Коньяк Hine VSOP, Absente 55, Symple, Бітер Angostura, Бітер Peychaud's",
-    "Vieux carre": "Віскі Templeton Rye, Коньяк Hine VSOP, Вермут Negroni Rosso, Лікер Benedictine, Бітер Angostura, Бітер Peychaud's",
-    "Whiskey Sour": "Бурбон Old Virginia, Lemon fresh, Simple, Egg white",
-    "White Lady": "Джин Flora, Лікер Cointreau, Lemon fresh, Egg white"
+    "Rosa frizzante gin tonic": "Gin infused rose pepper\nCordial grapefruit\nSalt solution\nSimple",
+    "Cherry velluto": "Lacto gin\nBasic cordial\nMonin cherry morello\nAcid mix",
+    "Mela verde": "Vodka\nCordial apple\nCocktail drops cardamom",
+    "Dolce lychee negroni": "Lychee Negroni punch\nLiqueur Lychee",
+    "Maracuja intensa sour": "Rum Silver\nLime Fresh\nLime Cordial\nMonin Passionfruit puree\nBasil Leaves",
+    "Bella pesca": "Vodka\nCordial peach\nCocktail drops palo santo\nAcid mix",
+    "Sex and the city": "Vodka infused yuzu\nCordial Cranberry\nSimple syrup\nAcid mix",
+    "Robin": "White wine\nGin\nRaspberry-Hibiscus cordial\nSimple\nAloe whiter\nAcid mix",
+    "Aluna": "Tequila\nGrapefruit cordial\nLiqueur Pineapple\nAcid mix",
+    "Aperitivo Spritz Santero": "Spritz Aperitivo\nSparkling wine",
+    "Americano": "Vermouth Rosso\nBitter\nSoda",
+    "Adonis": "Vermouth Rosso\nSherry Fino",
+    "Aztec Negroni": "Tequila\nMezcal\nLiqueur Cynar\nBitter\nBitter Truth Chocolate Bitters",
+    "Aviation": "Gin\nLiqueur Violette\nLiqueur maraschino\nLemon fresh",
+    "Amaretto Sour": "Bourbon\nLiqueur Amaretto\nLemon fresh\nSimple\nEgg white\nBitter Angostura",
+    "Boulevardier": "Bourbon\nVermouth Rosso\nBitter",
+    "Clover Club": "Gin\nLemon fresh\nRaspberry syrup\nEgg white",
+    "Daiquiri": "Rum Silver\nLime fresh\nSimple",
+    "Dry Martini": "Gin\nVermouth Extra Dry\nBitter Angostura Orange",
+    "Espresso Martini": "Vodka\nLiqueur Cartron Cafe\nLiqueur Giffard white cacao\nEspresso",
+    "French 75": "Gin\nLemon fresh\nSimple\nSparkling wine",
+    "Fino Daiquiri": "Sherry Fino\nLemon fresh\nSimple",
+    "Gimlet": "Gin\nLime cordial",
+    "Hanky Panky": "Gin\nVermouth Rosso\nAmaro Fernet Branca",
+    "Hugo": "Liqueur Elderflower\nSparkling Wine\nSoda",
+    "Last word": "Gin\nLiqueur Pages Verveine du Velay\nLiqueur Maraschino\nLime fresh",
+    "Margarita": "Tequila\nLiqueur Triple sec\nLime fresh\nSimple",
+    "Mezcal Margarita": "Mezcal\nTequila\nLiqueur Triple sec\nLime fresh\nSimple",
+    "Martinez": "Gin\nVermouth Rosso\nLiqueur Maraschino\nBitter Angostura Orange",
+    "Manhattan": "Bourbon\nVermouth Rosso\nBitter Angostura\nBitter Angostura orange",
+    "M&M": "Mezcal\nAmaro Montenegro",
+    "New york sour": "Bourbon\nLemon fresh\nSimple\nEgg white\nRed wine",
+    "Negroni": "Gin\nVermouth Rosso\nBitter",
+    "Negroni Sbagliato": "Vermouth Rosso\nBitter\nSparkling wine",
+    "Old Fashioned": "Bourbon\nCane syrup\nBitter Angostura",
+    "Pedro Manhattan": "Bourbon\nCherry Pedro Jimenez\nBitter Peychaud's",
+    "Prospector": "Bourbon\nAmaro Averna\nCherry Pedro Jimenez\nBitter Angostura",
+    "Penicillin": "Whiskey Grant's Smoky\nWhiskey Laphroaig 10\nCocktail drops ginger\nGinger syrup\nLemon fresh",
+    "Pisco sour": "Pisco\nLemon fresh\nLime fresh\nSimple\nEgg white",
+    "Tom collins": "Gin\nLemon fresh\nSimple\nSoda",
+    "Sazerac": "Whiskey Templeton Rye\nCognac VSOP\nAbsente 55\nSymple\nBitter Angostura\nBitter Peychaud's",
+    "Vieux carre": "Whiskey Templeton Rye\nCognac VSOP\nVermouth Rosso\nLiqueur Benedictine\nBitter Angostura\nBitter Peychaud's",
+    "Whiskey Sour": "Bourbon\nLemon fresh\nSimple\nEgg white",
+    "White Lady": "Gin\nLiqueur Triple sec\nLemon fresh\nEgg white"
 };
 
 const soundCorrect = new Audio('https://assets.mixkit.co/active_storage/sfx/2000/2000-preview.mp3'); 
-const soundWrong = new Audio('error.mp3'); // Твоя уточка
+const soundWrong = new Audio('audio/error.mp3'); 
 
 let keys = [];
 let currentIndex = 0;
 let score = 0;
+let timer;
+let timeLeft = 10;
 
 function startQuiz() {
     keys = Object.keys(cocktails).sort(() => Math.random() - 0.5);
     currentIndex = 0;
     score = 0;
-    document.getElementById('quiz-ui').style.display = 'block';
+    
+    // Ховаємо меню та показуємо гру
+    document.getElementById('start-screen').style.display = 'none';
     document.getElementById('final-screen').style.display = 'none';
+    document.getElementById('quiz-ui').style.display = 'block';
+    
     document.getElementById('total-questions').innerText = keys.length;
     showQuestion();
 }
 
 function showQuestion() {
+    clearInterval(timer);
+    timeLeft = 10;
+    updateTimerBar();
+
     const name = keys[currentIndex];
     const correct = cocktails[name];
     document.getElementById('target-cocktail').innerText = name;
@@ -85,9 +95,38 @@ function showQuestion() {
         btn.onclick = () => check(btn, opt === correct);
         container.appendChild(btn);
     });
+
+    timer = setInterval(() => {
+        timeLeft -= 0.1;
+        updateTimerBar();
+        if (timeLeft <= 0) {
+            clearInterval(timer);
+            handleTimeOut();
+        }
+    }, 100);
+}
+
+function updateTimerBar() {
+    const bar = document.getElementById('timer-bar');
+    const percent = (timeLeft / 10) * 100;
+    bar.style.width = percent + "%";
+    
+    if (timeLeft < 3) bar.style.background = "#f44336";
+    else bar.style.background = "#ffcc00";
+}
+
+function handleTimeOut() {
+    soundWrong.play().catch(()=>{});
+    const btns = document.querySelectorAll('.option-btn');
+    btns.forEach(b => {
+        b.disabled = true;
+        if(b.innerText === cocktails[keys[currentIndex]]) b.classList.add('correct');
+    });
+    nextStep();
 }
 
 function check(btn, isCorrect) {
+    clearInterval(timer);
     const btns = document.querySelectorAll('.option-btn');
     btns.forEach(b => b.disabled = true);
 
@@ -102,7 +141,10 @@ function check(btn, isCorrect) {
             if(b.innerText === cocktails[keys[currentIndex]]) b.classList.add('correct');
         });
     }
+    nextStep();
+}
 
+function nextStep() {
     setTimeout(() => {
         currentIndex++;
         if(currentIndex < keys.length) showQuestion();
@@ -111,29 +153,27 @@ function check(btn, isCorrect) {
 }
 
 function finish() {
-    const total = keys.length;
-    const percent = (score / total) * 100;
-    
     document.getElementById('quiz-ui').style.display = 'none';
     document.getElementById('final-screen').style.display = 'block';
-    document.getElementById('final-score').innerText = `${score} / ${total}`;
+    document.getElementById('final-score').innerText = `${score} / ${keys.length}`;
 
+    const percent = (score / keys.length) * 100;
     let msg = "";
     let comment = "";
 
     if (percent === 100) {
-        msg = "Серега, ты машина! 🦾";
-        comment = "Чистая работа! Хоть сейчас на международный конкурс.";
+        msg = "Легенда 🦾";
+        comment = "Піди всім розкажи який ти молодець";
     } else if (percent >= 75) {
-        msg = "Давай лучше!";
-        comment = "Хороший прогон! В целом годно, но на паре коктейлей ты бы «запорол» заказ. 😉";
+        msg = "На бар бека підійдеш";
+        comment = "Головне не засиджуйся 😉";
     } else {
-        msg = "Не молодец...";
-        comment = "Слабовато для профи. Давай-ка еще пару кругов теории, Лера бы расстроилась! 😂";
+        msg = "Ти голова, іди вчи";
+        comment = "Або твоїй мамці розкажи, що ти глек! 😂";
     }
 
     document.getElementById('final-msg').innerText = msg;
     document.getElementById('final-comment').innerText = comment;
 }
 
-startQuiz();
+// Гра НЕ стартує автоматично

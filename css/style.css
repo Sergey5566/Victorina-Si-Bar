@@ -1,7 +1,7 @@
 body { 
     font-family: 'Segoe UI', Roboto, sans-serif; 
-    background: #121212; 
-    color: #e0e0e0; 
+    background: url(../images/bg.jpeg) no-repeat center center fixed;
+    background-size: cover;
     display: flex; 
     justify-content: center; 
     align-items: center;
@@ -13,24 +13,42 @@ body {
 #quiz-container { 
     max-width: 600px; 
     width: 100%; 
-    background: #1e1e1e; 
+    background: #ffffff; 
     padding: 30px; 
     border-radius: 20px; 
-    box-shadow: 0 15px 35px rgba(0,0,0,0.7); 
-    border: 1px solid #333; 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5); 
+    color: #000000; 
 }
 
 h1 { 
-    color: #ffcc00; 
+    color: #000000; 
     text-align: center; 
     margin-bottom: 5px; 
     text-transform: uppercase; 
     letter-spacing: 2px; 
+    font-weight: bold; 
+}
+
+/* Таймер */
+#timer-container {
+    width: 100%;
+    height: 8px;
+    background: #eee;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+#timer-bar {
+    width: 100%;
+    height: 100%;
+    background: #ffcc00;
+    transition: width 0.1s linear;
 }
 
 .level-badge { 
     text-align: center; 
-    color: #888; 
+    color: #666; 
     font-size: 0.9em; 
     margin-bottom: 20px; 
 }
@@ -45,65 +63,73 @@ h1 {
 .cocktail-name { 
     display: block; 
     font-size: 1.6em; 
-    color: #ffcc00; 
+    color: #000000; 
     font-weight: bold; 
     margin-top: 10px; 
 }
 
+/* Стиль кнопок варіантів */
 .option-btn { 
     display: block; 
     width: 100%; 
-    background: #2a2a2a; 
-    color: #fff; 
-    border: 1px solid #444; 
+    background: #f8f9fa; 
+    color: #000000; 
+    border: 1px solid #acacac; 
     padding: 18px; 
     margin: 12px 0; 
     border-radius: 12px; 
     cursor: pointer; 
     text-align: left; 
-    transition: all 0.2s; 
+    transition: all 0.1s ease; 
     font-size: 0.95em; 
     outline: none;
+    white-space: pre-line;
+    position: relative;
+    top: 0;
+    box-shadow: 0 3px 0 #d8d8d8;
 }
 
-.option-btn:hover { 
-    background: #3a3a3a; 
-    border-color: #ffcc00; 
-}
+.option-btn:hover { background: #eeeeee; }
+.option-btn:active { top: 3px; box-shadow: 0 1px 0 #ccc; }
 
-.option-btn:focus { 
-    outline: none;
-}
-
-.correct { 
-    background: #2e7d32 !important; 
-    border-color: #4caf50 !important; 
-}
-
-.wrong { 
-    background: #c62828 !important; 
-    border-color: #ef5350 !important; 
-}
-
-#score-info { 
-    text-align: center; 
-    margin-top: 25px; 
-    color: #aaa; 
-    font-size: 0.8em; 
-}
-
-#restart-btn { 
+/* Головні кнопки (Старт/Заново) */
+.main-btn {
     width: 100%; 
-    background: #ffcc00; 
-    color: #000; 
+    background: #000000; 
+    color: #ffffff; 
     border: none; 
     padding: 18px; 
     font-weight: bold; 
     border-radius: 12px; 
     cursor: pointer; 
-    font-size: 1.1em; 
+    font-size: 1.1em;
+    transition: all 0.1s ease;
+    box-shadow: 0 3px 0 #444;
+    position: relative;
 }
 
-#restart-btn:hover {
-    background: #e6b800;
+.main-btn:active { top: 3px; box-shadow: 0 1px 0 #444; }
+
+.correct { 
+    background: #b7e1cd !important; 
+    border-color: #7adaab !important; 
+    box-shadow: none !important;
+    top: 0 !important;
 }
+
+.wrong { 
+    background: #f4cccc !important; 
+    border-color: #f19393 !important; 
+    box-shadow: none !important;
+    top: 0 !important;
+}
+
+#score-info { 
+    text-align: center; 
+    margin-top: 25px; 
+    color: #666; 
+    font-size: 0.8em; 
+}
+
+#final-score { font-size: 2em; margin: 15px 0; font-weight: bold; }
+#final-comment { font-style: italic; color: #444; margin-bottom: 30px; }
