@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body { 
     font-family: 'Segoe UI', Roboto, sans-serif; 
     background: url(../images/bg.jpeg) no-repeat center center fixed;
@@ -6,18 +10,21 @@ body {
     justify-content: center; 
     align-items: center;
     min-height: 100vh;
-    padding: 20px; 
+    padding: 10px; 
     margin: 0; 
+    overflow: hidden; /* Забороняємо загальний скрол сторінки */
 }
 
 #quiz-container { 
-    max-width: 600px; 
+    max-width: 500px; 
     width: 100%; 
     background: #ffffff; 
-    padding: 30px; 
+    padding: 25px; 
     border-radius: 20px; 
     box-shadow: 0 15px 35px rgba(0,0,0,0.5); 
     color: #000000; 
+    max-height: 95vh; /* Щоб влізало в екран смартфона */
+    overflow-y: auto; /* Скрол тільки всередині картки, якщо склад задовгий */
 }
 
 h1 { 
@@ -27,9 +34,9 @@ h1 {
     text-transform: uppercase; 
     letter-spacing: 2px; 
     font-weight: bold; 
+    font-size: 1.5em;
 }
 
-/* Таймер */
 #timer-container {
     width: 100%;
     height: 8px;
@@ -49,39 +56,39 @@ h1 {
 .level-badge { 
     text-align: center; 
     color: #666; 
-    font-size: 0.9em; 
+    font-size: 0.85em; 
     margin-bottom: 20px; 
 }
 
 #question-text { 
-    font-size: 1.1em; 
+    font-size: 1em; 
     text-align: center; 
-    margin-bottom: 20px; 
-    line-height: 1.6; 
+    margin-bottom: 15px; 
+    line-height: 1.4; 
 }
 
 .cocktail-name { 
     display: block; 
-    font-size: 1.6em; 
+    font-size: 1.5em; 
     color: #000000; 
     font-weight: bold; 
     margin-top: 10px; 
 }
 
-/* Стиль кнопок варіантів */
+/* Кнопки варіантів */
 .option-btn { 
     display: block; 
     width: 100%; 
     background: #f8f9fa; 
     color: #000000; 
     border: 1px solid #acacac; 
-    padding: 18px; 
-    margin: 12px 0; 
+    padding: 16px; 
+    margin: 10px 0; 
     border-radius: 12px; 
     cursor: pointer; 
     text-align: left; 
     transition: all 0.1s ease; 
-    font-size: 0.95em; 
+    font-size: 0.9em; 
     outline: none;
     white-space: pre-line;
     position: relative;
@@ -90,9 +97,13 @@ h1 {
 }
 
 .option-btn:hover { background: #eeeeee; }
-.option-btn:active { top: 3px; box-shadow: 0 1px 0 #ccc; }
 
-/* Головні кнопки (Старт/Заново) */
+.option-btn:active { 
+    top: 3px; 
+    box-shadow: 0 1px 0 #ccc; 
+}
+
+/* Головні кнопки */
 .main-btn {
     width: 100%; 
     background: #000000; 
@@ -126,7 +137,7 @@ h1 {
 
 #score-info { 
     text-align: center; 
-    margin-top: 25px; 
+    margin-top: 20px; 
     color: #666; 
     font-size: 0.8em; 
 }

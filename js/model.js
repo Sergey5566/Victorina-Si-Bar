@@ -59,7 +59,6 @@ function startQuiz() {
     currentIndex = 0;
     score = 0;
     
-    // Ховаємо меню та показуємо гру
     document.getElementById('start-screen').style.display = 'none';
     document.getElementById('final-screen').style.display = 'none';
     document.getElementById('quiz-ui').style.display = 'block';
@@ -161,12 +160,12 @@ function finish() {
     let msg = "";
     let comment = "";
 
-    if (percent === 100) {
+    if (percent >= 90) {
         msg = "Легенда 🦾";
-        comment = "Піди всім розкажи який ти молодець";
+        comment = "Відмінний результат! Піди всім розкажи, який ти молодець.";
     } else if (percent >= 75) {
         msg = "На бар бека підійдеш";
-        comment = "Головне не засиджуйся 😉";
+        comment = "Середній результат. Головне не засиджуйся 😉";
     } else {
         msg = "Ти голова, іди вчи";
         comment = "Або твоїй мамці розкажи, що ти глек! 😂";
@@ -175,5 +174,3 @@ function finish() {
     document.getElementById('final-msg').innerText = msg;
     document.getElementById('final-comment').innerText = comment;
 }
-
-// Гра НЕ стартує автоматично
